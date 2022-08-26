@@ -1,0 +1,87 @@
+  
+
+
+.welcome{
+font-size: 26px;
+    
+    text-align: center;
+    color: white;
+    align-content: center;
+    background-color: lightgray;    
+}
+
+    
+.dot {
+  height: 50px;
+  width: 100px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+} 
+#santencess{
+    border:  3px solid black;
+    border-radius: 12px;
+    background-color: azure;
+    
+    height: 125px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+        
+}
+#text{
+    border:  1px solid black;
+    border-radius: 12px;
+
+    height: 100px;
+    text-align: right;
+    font-size: 18px;
+      
+    }
+#slide{
+   
+    left: -600px;
+    width: 500px;
+    
+    height: 400px;
+   
+    background-color: #5E4485;
+     border:  1px solid white;
+    border-radius: 12px;
+    z-index: 1000;
+}
+#ok{
+   position: absolute;
+    left: -600px;
+     z-index: 1001;
+   
+}
+#ok:hover{
+   background-color: green;
+   
+}
+.classname {
+    
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0s;
+}
+
+
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+.wrapper:hover #slide {
+    transition: 1s;
+    left: 0;
+}
+
+
+
+    
